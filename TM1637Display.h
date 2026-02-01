@@ -33,6 +33,9 @@
 class TM1637Display {
 
 public:
+  //! Default constructor
+TM1637Display() = default;
+
   //! Initialize a TM1637Display object, setting the clock and
   //! data pins.
   //!
@@ -44,12 +47,18 @@ public:
 
   //! Sets the brightness of the display.
   //!
-  //! The setting takes effect when a command is given to change the data being
-  //! displayed.
+  //! The setting takes effect instantly.
   //!
   //! @param brightness A number from 0 (lowes brightness) to 7 (highest brightness)
   //! @param on Turn display on or off
   void setBrightness(uint8_t brightness, bool on = true);
+
+  //! Get the (cached) brightness value.
+  //!
+  //! @return The current brightness value.
+  uint8_t getBrightness() {
+    return m_brightness;
+  }
 
   //! Display arbitrary data on the module
   //!

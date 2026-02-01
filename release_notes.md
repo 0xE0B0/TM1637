@@ -1,3 +1,5 @@
+- V1.2.1
+  * Make setBrightness() write the new brightness value to the display instantly
 - V1.2.0
   * Add support for negative numbers
   * Add support for hexadeciaml number

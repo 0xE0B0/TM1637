@@ -2,6 +2,8 @@ TM1637
 ======
 Arduino library for TM1637 (LED Driver)
 
+This fork implements some minor changes, e.g. the brighness value is set directly to the display,
+instead off waiting for the next command. This is usefull to implement flashing or fading patterns.
 
 Description
 -----------
