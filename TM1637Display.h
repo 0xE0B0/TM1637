@@ -30,6 +30,9 @@
 
 #define DEFAULT_BIT_DELAY  100
 
+#define TM1637_BRIGHTNESS_MIN 0
+#define TM1637_BRIGHTNESS_MAX 7
+
 class TM1637Display {
 
 public:
